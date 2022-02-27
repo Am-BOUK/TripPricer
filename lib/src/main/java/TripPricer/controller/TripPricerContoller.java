@@ -30,7 +30,8 @@ public class TripPricerContoller {
 	 * @throws UUIDException 
 	 */
 	@GetMapping("/getPrice")
-	public List<Provider> getPrice(String apiKey, 
+	public List<Provider> getPrice(
+			@RequestParam String apiKey, 
 			@RequestParam String attractionId, 
 			@RequestParam int adults,
 			@RequestParam int children, 
